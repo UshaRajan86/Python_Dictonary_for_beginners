@@ -1,0 +1,17 @@
+Data=[
+    {'fields': 'tower', 'speed': 0, 'horse_power': 100},
+    {'fields': 'ork', 'speed': 10, 'horsepower': 0},
+    {'fields': 'soldier', 'speed': 10, 'horsepower': 10},
+    {'fields': 'troll', 'speed': 10, 'horsepower': -1},
+    {'fields': 'ruin', 'speed': 0, 'horsepower': -100},
+    {'fields': 'rock', 'speed': 0, 'horsepower': 0},
+    {'fields': 'castle', 'speed': 0, 'horsepower': 999},
+    {'fields': 'bird', 'speed': 100, 'horsepower': 0.1},
+    ]
+
+
+Answer=[]
+for item in Data:
+    if item["horsepower"] > 0 and item["speed"] == 0:
+     Answer.append(item)
+print(Answer)
